@@ -21,15 +21,15 @@ public class Setup {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 
 
-        driver.get("https://unit.ideascale.me/a/community/login");
-        driver.manage().window().maximize();
+//        driver.get("https://unit.ideascale.me/a/community/login");
+//        driver.manage().window().maximize();
 
 
     }
 
 
     @AfterSuite
-    public void tearDown() throws InterruptedException {
+    public void tearDown(){
         driver.quit();
 
     }
